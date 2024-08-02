@@ -5,7 +5,7 @@ const CameraButton: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const [showCamera, setShowCamera] = useState<boolean>(false);
-  const [showImage, setShowImage] = useState<boolean>(false);
+  // const [showImage, setShowImage] = useState<boolean>(false);
 
   const startCamera = async () => {
     try {
