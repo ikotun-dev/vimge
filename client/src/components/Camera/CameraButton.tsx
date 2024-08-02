@@ -39,21 +39,21 @@ const CameraButton: React.FC = () => {
       {!showCamera && (
         <button
           onClick={startCamera}
-          className="font-proxima border py-1 px-6 m-3 rounded-[3px] bg-teal-800 text-white"
+          className="font-proxima border py-2 m-3 rounded-full bg-teal-700 text-white w-full text-3xl"
         >
-          Start Camera 📸
+          📸
         </button>
       )}
 
       {showCamera && (
         <div style={{ display: "flex" }}>
           <video
-            className="w-[90vw] lg:w-[700px] my-6 h-[50vh]"
+            className="w-auto  my-6 h-auto"
             ref={videoRef}
             autoPlay
             style={{
-              border: "1px dashed teal",
-              borderRadius: "5px",
+              border: "1px solid teal",
+              borderRadius: "8px",
             }}
           ></video>
           {photo && (
@@ -71,12 +71,12 @@ const CameraButton: React.FC = () => {
           )}
         </div>
       )}
-      <button
-        onClick={takePicture}
-        className="font-proxima border py-1 px-6 m-3 rounded-[3px] textt-teal-800 bg-white border-teal-800"
-      >
-        Take Picture
-      </button>
+      {showCamera && (
+        <button
+          onClick={takePicture}
+          className="font-proxima border-4 h-12 w-12 m-3 rounded-full textt-teal-800  border-black"
+        ></button>
+      )}
       <canvas ref={canvasRef} style={{ display: "none" }}></canvas>
     </div>
   );
