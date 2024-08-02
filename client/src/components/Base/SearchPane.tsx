@@ -1,9 +1,10 @@
 import { FaCameraRetro } from "react-icons/fa";
 // import { FcOldTimeCamera } from "react-icons/fc";
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
-import CameraButton from "../Camera/CameraButton";
+// import CameraButton from "../Camera/CameraButton";
 import { useRecoilState } from "recoil";
 import { showCameraState } from "../../atoms";
+import CameraCapture from "../Camera/CameraCapture";
 
 const SearchPane = () => {
   const [showCamera, setShowCamera] = useRecoilState(showCameraState);
@@ -38,7 +39,8 @@ const SearchPane = () => {
       </div>
 
       <div className="w-full flex justify-center items-center">
-        {showCamera && <CameraButton />}
+        {/* {showCamera && <CameraButton />} */}
+        {showCamera && <CameraCapture />}
       </div>
     </div>
   );
