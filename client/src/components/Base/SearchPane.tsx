@@ -1,5 +1,5 @@
-import { FaCamera } from "react-icons/fa";
-import { FcOldTimeCamera } from "react-icons/fc";
+// import { FaCamera } from "react-icons/fa";
+// import { FcOldTimeCamera } from "react-icons/fc";
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import CameraButton from "../Camera/CameraButton";
 
