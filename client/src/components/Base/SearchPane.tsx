@@ -14,7 +14,7 @@ const SearchPane = () => {
     <div className="flex flex-col w-full  justify-center items-center">
       <div className="flex flex-col lg:flex-row w-full  justify-center items-start space-y-2 lg:space-y-0">
         <input
-          className="mr-2 rounded-[8px] p-2 w-[90vw] lg:w-[80vw] bg-white border border-teal-900 outline-none focus:border-2 focus:border-black  font-proxima"
+          className="mr-2 rounded-[8px] p-2 w-[90vw] lg:w-[80vw] bg-white border  border-teal-900 outline-none focus:border-2 focus:border-l-amber-500 focus:border-t-purple-500 focus:border-r-yellow-500 focus:border-b-pink-400  font-proxima"
           placeholder="Image URL...🔗 "
         />
 
@@ -25,14 +25,14 @@ const SearchPane = () => {
         {/* </span> */}
 
         <span className="space-x-3 flex justify-center items-center">
-          <span className="rounded-[8px] p-2 bg-white border hover:bg-emerald-50 border-teal-950 text-white font-proxima">
+          <span className="rounded-[8px] p-2 bg-white border-2 hover:bg-emerald-50 border-amber-500 text-white font-proxima">
             <FaCameraRetro
               size={25}
               color="black"
               onClick={() => setShowCamera(true)}
             />
           </span>
-          <button className="rounded-[8px] p-2 bg-white border border-teal-950 text-white font-proxima">
+          <button className="rounded-[8px] p-2 bg-white border-2 border-pink-700 text-white font-proxima">
             <FaRegArrowAltCircleRight size={25} color="black" />
           </button>
         </span>

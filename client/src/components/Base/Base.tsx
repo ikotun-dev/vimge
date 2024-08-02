@@ -7,7 +7,7 @@ import ImageDetails from "../Images/ImageDetail.js";
 
 function Base() {
   return (
-    <div className="bg-gradient-to-r from-indigo-200 to-[#f5f5f5] min-h-screen w-full flex flex-col  items-center p-2">
+    <div className="bg-gradient-to-r from-cyan-700 to-[#f5f5f5] min-h-screen w-full flex flex-col  items-center p-2">
       <div className="header-text rounded-[20px] my-3 border border-black w-[10rem] bg-white">
         <Header />
       </div>
@@ -16,7 +16,7 @@ function Base() {
         <SearchPane />
       </div>
 
-      <div className="input-fields flex lg:space-x-4 flex-wrap justify-center  items-center">
+      <div className=" flex lg:space-x-4 flex-wrap justify-center  items-center">
         <ImageDetails />
         <ImageDetails />
 

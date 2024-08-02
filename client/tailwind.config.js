@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         lato: ["Lato", "sans-serif"],
         proxima: ["Proxima Nova Condensed", "sans-serif"],
+        delicious: ["Delicious Handrawn", "sans-serif"],
       },
     },
   },
