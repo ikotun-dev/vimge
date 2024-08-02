@@ -1,10 +1,10 @@
 import { FaCameraRetro } from "react-icons/fa";
 // import { FcOldTimeCamera } from "react-icons/fc";
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
-// import CameraButton from "../Camera/CameraButton";
+import CameraButton from "../Camera/CameraButton";
 import { useRecoilState } from "recoil";
 import { showCameraState } from "../../atoms";
-import CameraCapture from "../Camera/CameraCapture";
+// import CameraCapture from "../Camera/CameraCapture";
 
 const SearchPane = () => {
   const [showCamera, setShowCamera] = useRecoilState(showCameraState);
@@ -14,7 +14,7 @@ const SearchPane = () => {
     <div className="flex flex-col w-full  justify-center items-center">
       <div className="flex flex-col lg:flex-row w-full  justify-center items-start space-y-2 lg:space-y-0">
         <input
-          className="mr-2 rounded-[8px] p-2 w-[100%] lg:w-[80%] bg-white border border-teal-900 outline-none focus:border-2 focus:border-black  font-proxima"
+          className="mr-2 rounded-[8px] p-2 w-[90vw] lg:w-[80vw] bg-white border border-teal-900 outline-none focus:border-2 focus:border-black  font-proxima"
           placeholder="Image URL...🔗 "
         />
 
@@ -25,13 +25,13 @@ const SearchPane = () => {
         {/* </span> */}
 
         <span className="space-x-3 flex justify-center items-center">
-          <button className="rounded-[8px] p-2 bg-white border hover:bg-emerald-50 border-teal-950 text-white font-proxima">
+          <span className="rounded-[8px] p-2 bg-white border hover:bg-emerald-50 border-teal-950 text-white font-proxima">
             <FaCameraRetro
               size={25}
               color="black"
               onClick={() => setShowCamera(true)}
             />
-          </button>
+          </span>
           <button className="rounded-[8px] p-2 bg-white border border-teal-950 text-white font-proxima">
             <FaRegArrowAltCircleRight size={25} color="black" />
           </button>
@@ -39,8 +39,8 @@ const SearchPane = () => {
       </div>
 
       <div className="w-full flex justify-center items-center">
-        {/* {showCamera && <CameraButton />} */}
-        {showCamera && <CameraCapture />}
+        {showCamera && <CameraButton />}
+        {/* {showCamera && <CameraCapture />} */}
       </div>
     </div>
   );
