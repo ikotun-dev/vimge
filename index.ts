@@ -1,9 +1,14 @@
 import express from "express";
 import morgan from "morgan";
-
+import path from "path";
 const app = express();
-
-app.set("view engine", "ejs");
+//
+// app.use(express.static(path.join(__dirname, "../client/build")));
+//
+// app.get("*", (req, res) => {
+//   res.sendFile(path.join(__dirname, "../client/build", "index.html"));
+// });
+//
 app.use(morgan("dev"));
 
 app.get("/", (req, res) => {
