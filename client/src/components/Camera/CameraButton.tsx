@@ -48,7 +48,7 @@ const CameraButton: React.FC = () => {
       {showCamera && (
         <div style={{ display: "flex" }}>
           <video
-            className="w-[80vw] lg:w-[700px] my-6 h-[50vh]"
+            className="w-[90vw] lg:w-[700px] my-6 h-[50vh]"
             ref={videoRef}
             autoPlay
             style={{
